@@ -1,0 +1,162 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.product-image {
+  flex: 1 1 300px;
+  margin-right: 50px;
+}
+
+.product-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  flex: 1 1 auto;
+  margin-top: 20px;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin-bottom: 20px;
+}
+
+.product-info form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-info label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.product-info input[type="number"] {
+  width: 50px;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.product-info button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.product-info button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.cta {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .product-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .product-info {
+    margin-top: 0;
+  }
+}
