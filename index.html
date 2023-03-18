@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Product Page</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="product">
+      <div class="product-image">
+        <img src="product-image.jpg" alt="Product Image">
+      </div>
+      <div class="product-info">
+        <h2>Product Name</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet faucibus magna, vel auctor metus vestibulum id. Nunc bibendum nunc sed nisi aliquam, sit amet suscipit massa varius.</p>
+        <form action="#">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+          <button type="submit">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+    <div class="cta">
+      <h2>Ready to try our product?</h2>
+      <p>Subscribe to our newsletter to receive updates and a free digital download!</p>
+      <form action="#">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Product Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
